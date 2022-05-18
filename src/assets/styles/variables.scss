@@ -1,0 +1,34 @@
+// base color
+$white  :#ffffff;
+$gray-c :#cccccc;
+$gray-a :#aaaaaa;
+$gray-4d:#4d4d4d;
+$gray-3 :#333333;
+$gray-6 :#666666;
+$gray-9 :#999999;
+$gray-f5:#F5F5F5;
+$gray-f0:#F0F0F0;
+$gray-0 :#000000;
+$gray-d :#dddddd;
+
+$text-score:#F36D26;
+
+
+@mixin Oneline-ellipsis($widthDefault) {
+    width        : $widthDefault;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    display      : inline-block;
+}
+
+@mixin Multiline-ellipsis($widthDefault: 400px, $rowsDefault: 3) {
+    width             : $widthDefault;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    text-overflow     : -o-ellipsis-lastline;
+    display           : -webkit-box;
+    -webkit-line-clamp: $rowsDefault;
+    -webkit-box-orient: vertical;
+
+}

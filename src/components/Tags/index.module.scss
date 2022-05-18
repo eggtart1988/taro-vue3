@@ -1,0 +1,15 @@
+.container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin         : 0 0 13px 0;
+    background     : #F3F5F3;
+    border-radius  : 15px;
+    box-sizing     : border-box;
+}
+
+.current {
+    color     : #0CB076;
+    background: #F0FFF9;
+    border    : 1px solid #0CB076;
+}
