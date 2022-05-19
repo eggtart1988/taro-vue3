@@ -9,6 +9,8 @@
     "css": "sass"
   },
   "scripts": {
+    "tep": "node scripts/template",
+    "com": "node scripts/component",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
